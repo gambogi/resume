@@ -4,13 +4,13 @@
 \usepackage{anysize}
 \usepackage[pdftex, unicode]{hyperref}
 \hypersetup{
-	pdftitle={Russell Harmon's Resume},
-	pdfauthor={Russell Harmon},
+	pdftitle={William Orr's Resume},
+	pdfauthor={William Orr},
 	pdfborder={0 0 0},
 	% Not sure if this is needed.
 	unicode=true
 }
-\marginsize{0.375in}{1.875in}{0.5in}{0.5in}
+\marginsize{0.375in}{1.875in}{0.6in}{0.5in}
 \setdefaultitem{\footnotesize \textbullet}{}{}{}{}{}
 \setdefaultleftmargin{0em}{}{}{}{}{}
 \setdefaultenum{(a)}{(1)}{}{}{}{}
@@ -18,123 +18,121 @@
 \newcommand{\rdate}[1]{\hfill {\small #1}}
 \renewcommand{\employer}[5]{\item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
 \begin{document}
-\name{\Large Russell E. Harmon}
+\name{\Huge William Orr}
 \begin{resume}
 \section{\mysidestyle Contact \\ Information} \vspace{2mm}
 	\begin{asparablank}
-		\item Rochester Institute of Technology \hfill 2710 Avenue J NW
-		\item 39 Nathaniel Rochester Hall \hfill Winter Haven, FL 33881
+		\item Rochester Institute of Technology \hfill 42 Kingsbury Drive
+		\item 2050 Nathaniel Rochester Hall \hfill Trumbull, Connecticut 06611
 		\item Rochester, NY 14623 \hfill
-		\href{mailto:russ@eatnumber1.com}{russ@eatnumber1.com}
-		\item (863) 514-7014 \hfill
-		\href{http://blog.eatnumber1.com/}{blog.eatnumber1.com}
+		\href{mailto:will@worrbase.com}{will@worrbase.com}
+		\item (585) 708-9677 \hfill
 	\end{asparablank}
-
-\section{\mysidestyle Objective}
-	I am looking for a three to six month co-op starting June.
-
-\section{\mysidestyle Summary}
-	I am a person who loves to tinker. I spend the majority of my free time working on personal projects. Some of the projects I have worked on include the Linux kernel and the Gentoo Linux distribution.  As a result, I've found that I have become very good at picking up new ideas quickly, and expanding what I already know with little more than the internet and a direction.
 
 \section{\mysidestyle Education}
 	\begin{compactdesc}
-		\item[Rochester Institute of Technology] - Rochester, NY \rdate{September 2006 - Present}
+		\item[Rochester Institute of Technology] - Rochester, NY \rdate{September 2008 - Present}
 		\begin{compactitem} { \small
-			\item Major: B.S./M.S. Computer Science
-			\item M.S. GPA: 3.0
-			\item Minor: Music
+			\item Major: B.S. Applied Networking and Systems Administration
+			\item PFOS GPA: 3.5
+			\item Minor: Computer Science
 			\item Expected graduation: June 2012
 		} \end{compactitem}
 	\end{compactdesc}
 
 \section{\mysidestyle Experience}
 	\begin{asparadesc}
-		\employer{Gentoo Linux}{Gentoo Foundation}{August 2007 - Present}{Package Maintainer}{http://www.gentoo.org/}
+        \employer{Wegmans Food Markets}{Rochester, NY}{November 2010 - Present}{UNIX Administrator and DBA}{http://www.wegmans.com}
 
-		\small
-		Sole maintainer of the PCSX2 ebuilds. An ebuild is a bash script which fetches, unpacks, compiles and installs a piece of software. PCSX2 is a Play Station 2 emulator.
+        \small
+        Manage users and user access rights in AIX, Solaris, Oracle and
+        Informix. Write management and utility SQL and PL/SQL scripts for use in Oracle and
+        SQL Server.  Perform variety of other, more varied tasks as needed.
 		\normalsize
 		\\
-		\employer{SafeNet Inc}{Belcamp, MD}{June 2008 - Present}{Engineering Intern}{http://www.safenet-inc.com/}
+		
+		\employer{RIT Information \& Technology Services}{Rochester, NY}{September 2010 - Present}{Systems Operator}{http://www.rit.edu/its/}
 
 		\small
-		Worked on the SafeNet Management Console (SMC) on a team of 7. SMC is a web application built on \emph{Java}, \emph{JBoss}, \emph{Hibernate} and \emph{JSF} which manages high speed network encryption devices that SafeNet manufactures, including top-secret devices. Responsibilities included \begin{inparaenum} \item creating requirements documents, \item implementing requirements (IPv6, file synchronization), \item testing and \item fixing defects. \end{inparaenum} Some of the specific tasks that were assigned while working there included transparent file synchronization between machines, implementing IPv6 support and implementing support for multiple SMC servers managing the same device (distributed devices).
+		Monitor and debug overnight backups and batch jobs for RIT computer systems. Jobs include EMC NetWorker backups as well as batch jobs on IBM z/OS mainframe platform.
 		\normalsize
 		\\
-		\employer{New York City Department of Education}{Bronx, NY}{September 2002 - June 2006}{IT Specialist}{http://schools.nyc.gov/}
-
-		\small
-		Worked at Lehman High School. The work there included \begin{inparaenum} \item setup and maintain the computer systems, \item repair and maintain the network, \item diagnose and eliminate viruses and malware on the school's network and computer systems and \item audit the network for malicious activity. \end{inparaenum}
+		
+		\employer{Freelance Programmer}{Elance, vWorker}{April 2010 - September 2010}{Programmer}{}
+		
+		\small Worked on numerous programming jobs of varying size for clients on the internet. Projects included GWT and AppEngine Twitter client, C driver for temperature device and accompanying C++ GUI program, and several simple bash and Perl scripting contracts.
 		\normalsize
-%		\\
-%		\employer{New York Sailing \& Yacht Club}{Bronx, NY}{June 2001 - August 2005}{Launch Operator}{http://www.startsailing.com/}
-%		
-%		\small
-%		Worked at the New York Sailing \& Yacht Club as the launch operator. The work involved taxiing patrons to their boats moored in the harbor. While there, I also received a boating license in small craft operation.
-%		\normalsize
+		\\
+		
+		\employer{Freelance Trumpet Player}{Trumbull, CT}{September 2007 - April 2008}{Trumpeter}{}
+		
+		\small Played trumpet in several musicals and formal occasions. Styles range from baroque and classical to jazz and blues.
+		\normalsize
+		\\
 	\end{asparadesc}
 
-\section{\mysidestyle Technical Skills \& Certifications}
+\section{\mysidestyle Technical Skills}
 	\begin{compactdesc}
 		\item[Languages] \begin{inparaenum} { \small
+			\item Perl
 			\item Java
-			\item C/C++
-			\item BASH \& other SH derived scripting languages
+			\item C/C++/C\#
+			\item bash
 			\item Python
+			\item PL/SQL
 		} \end{inparaenum}
 		\item[Operating Systems] \begin{inparaenum} { \small
 			\item Linux -
 			\begin{inparablank}
+				\item Debian and derivatives,
 				\item Gentoo,
-				\item Debian,
-				\item OpenWRT
+				\item CentOS
 			\end{inparablank}
+			\item OpenBSD
+			\item FreeBSD
+            \item AIX
 			\item Solaris
+			\item IBM z/OS
 			\item Windows
-			\item OSX
 		} \end{inparaenum}
-		\item[Hardware] \begin{inparaenum} { \small
-			\item Server Maintenance
-			\item Networking
-			\item Network Security
-		} \end{inparaenum}
-		\item[Tools] \begin{inparaenum} { \small
-			\item \LaTeX
-			\item Microsoft Office
-			\item Vim
-			\item Idea
-			\item Regex
-			\item Autotools
-		} \end{inparaenum}
-		\item[Certifications] \begin{inparaenum} { \small
-			\item Cisco Academy, with honors (terms 1 and 2)
-			\item A+
-			\item MOUS (Word)
+		\item[Services] \begin{inparaenum} { \small
+			\item MySQL, PostgreSQL, Oracle and Informix
+			\item Dovecot and Postfix
+			\item ISC-DHCP
+			\item BIND9 and Windows DNS
+			\item Active Directory, NIS, Kerberos, and LDAP
+			\item NFS, Samba
+            \item AIX auditing
+            \item Symantec NetBackup
 		} \end{inparaenum}
 	\end{compactdesc}
 
 \section{\mysidestyle Extracurricular}
 	\begin{asparablank}
-		\item US FIRST Robotics Team 1230 - {\small Lead programmer}
-		\rurl{http://www.usfirst.org/}
-		\item CSH ({\small Computer Science House}) - Network Administrator\rurl{http://www.csh.rit.edu/}
-		\item Rocking the Boat - {\small Built a boat for children from the South
-		Bronx} \rurl{http://www.rockingtheboat.org/}
-%		\item City Island Computer Services - {\small Age 10}
+		\item {\bf CSH ({\small Computer Science House})}\rurl{http://www.csh.rit.edu/}
+		\small	\item Network and Systems Administrator \hfill February 2009 - Present
+				\item Operational Communications Director \hfill March 2010 - January 2011
 	\end{asparablank}
-
-\section{\mysidestyle Honors \& Awards}
+	
+\section{\mysidestyle Projects}
 	\begin{asparablank}
-		\item NYC Regional Robotics Award winner - {\small 27th place nationally}
-		\item Visual Basic programming award for academic excellence 2005
-%		\item First Place Sailing Award 2000, 2002
-	\end{asparablank}
-
-\section{\mysidestyle Special Accomplishments}
-	\begin{asparablank}
-		\item At age 8, built my first computer. At age 10, worked my first job at City Island Computer Services. At age 12, attended my first programming class at Lehman College.
-%		\item Designed and implemented an encryption algorithm using a combination of transposition and substitution.
-	\end{asparablank}
-
+		\item {\bf CSH Mail Migration}
+		
+		\small Migrated POP3/IMAP server on from UW-IMAPd on FreeBSD to Dovecot on Debian. Wrote scripts to convert mail from mbox to Maildir for several hundred CSH users. Also worked with Postfix, spamassassin, and amavis during move to new server hardware.
+		\normalsize
+		\\
+		
+		\item {\bf CSH Computer Lab}
+		
+		\small Deployed Debian Linux thin clients using LTSP (Linux Terminal Server Project) in CSH computer lab. LTSP allows low-end computers to connect to a single server which runs all of the applications requested by the user. Also set up a Debian APT repo containing custom CSH packages.
+		\normalsize
+		\\
+		
+		\item {\bf WWW::Formspring CPAN Module}
+		
+		\small Wrote Perl module to interact with Formspring.me API. Perl module implements full range of Formspring.me functionality in an object-oriented manner. Used Moose for Perl OO instead of doing it natively.
+		\normalsize
+		\\
+	\end{asparablank}	
 \end{resume}
 \end{document}
