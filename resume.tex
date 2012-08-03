@@ -36,12 +36,21 @@
 			\item Major: B.S. Applied Networking and Systems Administration
 			\item PFOS GPA: 3.1
 			\item Minor: Computer Science
-			\item Expected graduation: November 2012
+			\item Expected graduation: March 2013
 		} \end{compactitem}
 	\end{compactdesc}
 
 \section{\mysidestyle Experience}
 	\begin{asparadesc}
+		\employer{LinkedIn}{Mountain View, CA}{May 2012 - August 2012}{Systems Administrator}{http://linkedin.com}
+
+		\small
+		Managed large number of machines running both Solaris and Red Hat Linux. Made heavy use of cfengine
+		to automate large tasks. Wrote python tools to track and audit login information
+		as well as other logged data from logstash. Wrote bash and perl tools to perform administrative tasks.
+		\normalsize
+		\\
+
         \employer{Wegmans Food Markets}{Rochester, NY}{November 2010 - May 2011}{UNIX Administrator and DBA}{http://www.wegmans.com}
 
         \small
@@ -56,12 +65,6 @@
 		\small
 		Monitor and debug overnight backups and batch jobs for RIT
 		computer systems. Responsibilities include monitoring EMC NetWorker backups as well as batch jobs on IBM z/OS mainframe platform.
-		\normalsize
-		\\
-		
-		\employer{Freelance Programmer}{Elance, vWorker}{April 2010 - Present}{Programmer}{}
-		
-		\small Worked on numerous programming jobs of varying size for clients on the internet. Projects included GWT and AppEngine Twitter client, C driver for temperature device and accompanying C++ GUI program, and several simple bash and Perl scripting contracts.
 		\normalsize
 		\\
 	\end{asparadesc}
@@ -111,9 +114,11 @@
 	
 \section{\mysidestyle Projects}
 	\begin{asparablank}
-		\item {\bf CSH Mail Migration}
+		\item {\bf Auditing tools}
 		
-		\small Migrated POP3/IMAP server on from UW-IMAPd on FreeBSD to Dovecot on Debian. Wrote scripts to convert mail from mbox to Maildir for several hundred CSH users. Also worked with Postfix, spamassassin, and amavis during move to new server hardware.
+		\small Wrote tools to audit user management that pulled from Logstash and CFEngine data. Wrote
+		python web frontend that summarizd all of this data as well as displaying normal usage patterns
+		using Pylons and SQLAchemy. Backed by a MySQL database.
 		\normalsize
 		\\
 		
