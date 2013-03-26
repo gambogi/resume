@@ -4,8 +4,8 @@
 \usepackage{anysize}
 \usepackage[pdftex, unicode]{hyperref}
 \hypersetup{
-	pdftitle={William Orr's Resume},
-	pdfauthor={William Orr},
+	pdftitle={Matthew Gambogi's Resume},
+	pdfauthor={Matthew Gambogi},
 	pdfborder={0 0 0},
 	% Not sure if this is needed.
 	unicode=true
@@ -18,53 +18,43 @@
 \newcommand{\rdate}[1]{\hfill {\small #1}}
 \renewcommand{\employer}[5]{\item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
 \begin{document}
-\name{\Huge William Orr}
+\name{\Huge Matthew Gambogi}
 \begin{resume}
 \section{\mysidestyle Contact \\ Information} \vspace{2mm}
 	\begin{asparablank}
-		\item Rochester Institute of Technology \hfill 36W344 Ferson Creek Road
-		\item 2050 Nathaniel Rochester Hall \hfill St Charles, Illinois 60174
+		\item Rochester Institute of Technology \hfill 312 Pathway Pl SW
+		\item 2991 Nathaniel Rochester Hall \hfill Leesburg, Virginia 20175
 		\item Rochester, NY 14623 \hfill
-		\href{mailto:will@worrbase.com}{will@worrbase.com}
-		\item (585) 708-9677 \hfill
+		\href{mailto:m@gambogi.com}{m@gambogi.com}
+		\item (703) 999-3742 \hfill {matt.gambogi.com}
+		\item \hfill github.com/mgambogi
 	\end{asparablank}
 
 \section{\mysidestyle Education}
 	\begin{compactdesc}
 		\item[Rochester Institute of Technology] - Rochester, NY \rdate{September 2008 - Present}
 		\begin{compactitem} { \small
-			\item Major: B.S. Applied Networking and Systems Administration
-			\item PFOS GPA: 3.1
-			\item Minor: Computer Science
-			\item Expected graduation: March 2013
+			\item Double Major: B.S. Computer Science and Economics 
+			\item Economics Concentration: Theory and Policy
+			\item Expected graduation: May 2016
 		} \end{compactitem}
 	\end{compactdesc}
 
-\section{\mysidestyle Experience}
+\section{\mysidestyle Work Experience}
 	\begin{asparadesc}
-		\employer{LinkedIn}{Mountain View, CA}{May 2012 - August 2012}{Systems Administrator}{http://linkedin.com}
+		\employer{SecureIT}{Reston, VA}{May 2012 - August 2012}{Cyber Ninja (Research Intern)}{http://secureit.com}
 
 		\small
-		Managed large number of machines running both Solaris and Red Hat Linux. Made heavy use of cfengine
-		to automate large tasks. Wrote python tools to track and audit login information
-		as well as other logged data from logstash. Wrote bash and perl tools to perform administrative tasks.
+		Studied, tested, and developed exploitation and exploit prevention techniques. Designed data collection systems.
+		\item Darpa Projects: \hfill www.ctf.usma.edu/currentProjects.htm
+			\item Poor Man’s Control Flow Integrity (PMCFI) project: Designing and running tests on an experiemental kernel level security system
+			\item Process Gossip: Designed data collection scripts investigating the state of /proc/ for a possible side channel attack in the design of the Android keyboard process.
 		\normalsize
 		\\
-
-        \employer{Wegmans Food Markets}{Rochester, NY}{November 2010 - May 2011}{UNIX Administrator and DBA}{http://www.wegmans.com}
+        \employer{Town of Leesburg, Parks and Recreation}{Rochester, NY}{April 2010 - Present}{Lifeguard}{http://www.leesburgva.org/index.aspx?page=117}
 
         \small
-        Manage users and user access rights in AIX, Solaris, Oracle and
-        Informix. Write management and utility SQL and PL/SQL scripts for use in Oracle and
-        SQL Server.  Perform variety of more varied tasks as needed.
-		\normalsize
-		\\
-		
-		\employer{RIT Information \& Technology Services}{Rochester, NY}{September 2010 - Present}{Systems Operator}{http://www.rit.edu/its/}
-
-		\small
-		Monitor and debug overnight backups and batch jobs for RIT
-		computer systems. Responsibilities include monitoring EMC NetWorker backups as well as batch jobs on IBM z/OS mainframe platform.
+        Longtime guard, responsible for monitoring pool activities, ensuring water safety; Rescuing struggling swimmers; administering first aid.
 		\normalsize
 		\\
 	\end{asparadesc}
@@ -72,77 +62,63 @@
 \section{\mysidestyle Technical Skills}
 	\begin{compactdesc}
 		\item[Languages] \begin{inparaenum} { \small
-			\item Perl
 			\item Java
-			\item C/C++/C\#
-			\item bash
 			\item Python
-			\item PL/SQL
+			\item C
+			\item x86 Assembly
 		} \end{inparaenum}
 		\item[Operating Systems] \begin{inparaenum} { \small
 			\item Linux -
 			\begin{inparablank}
 				\item Debian and derivatives,
-				\item Gentoo,
-				\item CentOS
+				\item Arch,
+				\item Fedora
+				\item webOS
 			\end{inparablank}
-			\item OpenBSD
-			\item FreeBSD
-     			\item AIX
-			\item Solaris
-			\item IBM z/OS
 			\item Windows
 		} \end{inparaenum}
-		\item[Services] \begin{inparaenum} { \small
-			\item MySQL, PostgreSQL, Oracle and Informix
-			\item Dovecot and Postfix
-			\item ISC-DHCP
-			\item BIND9 and Windows DNS
-			\item Active Directory, NIS, Kerberos, and LDAP
-			\item NFS, Samba
-            \item AIX auditing
-            \item Symantec NetBackup
+		\item[Tools] \begin{inparaenum} { \small
+			\item gdb
+			\item git
+			\item vim
+			\item Eclipse
+			\item make
+			\item troff
 		} \end{inparaenum}
 	\end{compactdesc}
+\section{\mysidestyle Personal Projects}
+	\begin{asparablank}
+		\item {\bf webOS Desktop Environment} \hfill October 2012 - Present
+		
+		\small Wrote start up scripts and added features to the Window Management System, packaged it, created a lightweight Ubuntu derivative with the resulting environment. Improved desktop usability.  
+		\normalsize
+		\\
+		
+		\item {\bf wiki2man} \hfill January 2013
+		
+		\small Small command line utility for converting mediawiki style entries into roughly equivalent troff documents intended for man entries. Currently installed on Computer Science House systems.
+		\normalsize
+		\\
+		
+		\item {\bf DC Area Crime Map 2011} \hfill February 2012
+		
+		\small Paired up crime data sets from the DC, Maryland, and Virgina State police with county maps of the area in ArcGIS, and produced a robust data visualization. Corroborated several locally held stereotypes about several areas.
+		\normalsize
+		\\
+	\end{asparablank}
 
 \section{\mysidestyle Extracurricular}
 	\begin{asparablank}
-		\item {\bf CSH ({\small Computer Science House})}\rurl{http://www.csh.rit.edu/}
-		\small	\item Network and Systems Administrator \hfill February 2009 - Present
-				\item Operation Communications Director \hfill March 2010 - January 2011
+		\item {\bf Computer Science House ({\small CSH})}\rurl{http://www.csh.rit.edu/}
+		\small	\item Active Member \hfill September 2012 - Present
+				\item A student run technical organization, emphasizing technical projects and group learning. 
+		\\
+		\item {\bf Cyber Security Competition Team ({\small High School})} \hfill Fall 2011
+		\small \item Founded Senior year. Recruited a number of classmates, mentors from Lockheed Martin. Competed in the Cyber Security Awareness Week High School devision. 
+		\\
+		\item {\bf Debate Team ({\small High School})} \hfill 2009-2012
+		\small \item Founded Sophomore year. Recruited dozens of classmates, self-coached into a championship team after three years.
 	\end{asparablank}
-	
-\section{\mysidestyle Projects}
-	\begin{asparablank}
-		\item {\bf Auditing tools}
-		
-		\small Wrote tools to audit user management that pulled from Logstash and CFEngine data. Wrote
-		python web frontend that summarizd all of this data as well as displaying normal usage patterns
-		using Pylons and SQLAchemy. Backed by a MySQL database.
-		\normalsize
-		\\
-		
-		\item {\bf AIX Auditing Deployment}
-		
-		\small Designed and deployed auditing strategy to AIX cluster.
-		Implemented log rotation (in ksh88), as well as syslog
-		integration. Determined audit needs based on client's request,
-		and designed audit system appropriately. Implemented log
-		shipping to QRadar.
-		\normalsize
-		\\
-		
-		\item {\bf Wireless Hotspot with Content Injection}
-		
-		\small Setup and deployed chillispot and Squid proxy server.
-        Created wireless hotspot that requires RADIUS login to access the
-        internet. Web browsing data is cached with Squid, and sent to ICAP
-        service called Greasyspoon that injects advertisements into web
-        browsing. Wrote advertisement management infrastructure in Perl using
-        Dancer web framework. Wrote email injection service in C using iptables
-        and libnfqueue to redirect traffic.
-		\normalsize
-		\\
-	\end{asparablank}	
+
 \end{resume}
 \end{document}
