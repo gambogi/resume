@@ -5,12 +5,12 @@
 \usepackage[pdftex, unicode]{hyperref}
 \hypersetup{
 	pdftitle={Matthew Gambogi's Resume},
-	pdfauthor={Matthew Gambogi},
-	pdfborder={0 0 0},
-	% Not sure if this is needed.
-	unicode=true
+		pdfauthor={Matthew Gambogi},
+		pdfborder={0 0 0},
+		% Not sure if this is needed.
+			unicode=true
 }
-\marginsize{0.375in}{1.875in}{0.6in}{0.5in}
+\marginsize{0.5in}{1.875in}{0.6in}{0.5in}
 \setdefaultitem{\footnotesize \textbullet}{}{}{}{}{}
 \setdefaultleftmargin{0em}{}{}{}{}{}
 \setdefaultenum{(a)}{(1)}{}{}{}{}
@@ -18,106 +18,98 @@
 \newcommand{\rdate}[1]{\hfill {\small #1}}
 \renewcommand{\employer}[5]{\item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
 \begin{document}
-\name{\Huge Matthew Gambogi}
+\name{\huge Matthew Gambogi}
 \begin{resume}
 \section{\mysidestyle Contact \\ Information} \vspace{2mm}
-	\begin{asparablank}
-		\item Rochester Institute of Technology \hfill 312 Pathway Pl SW
-		\item 2991 Nathaniel Rochester Hall \hfill Leesburg, Virginia 20175
-		\item Rochester, NY 14623 \hfill
-		\href{mailto:m@gambogi.com}{m@gambogi.com}
-		\item (703) 999-3742 \hfill {matt.gambogi.com}
-		\item \hfill github.com/gambogi
-	\end{asparablank}
+\begin{asparablank}
+\item Rochester Institute of Technology \hfill 312 Pathway Pl SW
+\item 704 Park Point Dr \#1 \hfill Leesburg, Virginia 20175
+\item Rochester, NY 14623 \hfill
+\href{mailto:m@gambogi.com}{m@gambogi.com}
+\item (703) 999-3742 \hfill \href{http://matt.gambogi.com}{matt.gambogi.com}
+\item \hfill \href{http://github.com/gambogi}{github.com/gambogi}
+\end{asparablank}
 
 \section{\mysidestyle Education}
-	\begin{compactdesc}
-		\item[Rochester Institute of Technology] - Rochester, NY \rdate{September 2012 - December 2015 (Expected)}
-		\item B.S. Computer Science
-	\end{compactdesc}
+\begin{compactdesc}
+\item[Rochester Institute of Technology] - Rochester, NY 
+\rdate{Sept 2012 - Dec 2016 (Expected)}
+\item B.S. Computer Science, minor in Economics.
+\end{compactdesc}
 
 \section{\mysidestyle Work Experience}
-	\begin{asparadesc}
-        \employer{athenahealth}{Boston, MA}{Summer 2014}{Software Developer Intern}{http://www.athenahealth.com}
-        Starting this summer. Details to come.
-        \\
-		\employer{Kaprica Security}{Reston, VA}{Summer 2013}{Software Development Intern}{http://www.kaprica.com}
-		Worked on website frontend, backend. Mostly python web development. 
-        \\
-        \normalsize\employer{Google Summer of Code, Sugar Labs}{Remote}{Summer 2013}{Mentor}{http://www.google-melange.com/gsoc/homepage/google/gsoc2013;}
-        	Google Summer of Code (GSoC) mentor. Helped Sugar Labs GSoC participants with everything from the structure of their groups to the technical details of the projects.
-		\normalsize
-		\\
-
-		\employer{SecureIT}{Reston, VA}{Summer 2012}{Cyber Ninja (Research Intern)}{http://secureit.com}
-		Studied, tested, and developed exploitation and exploit prevention techniques. Designed data collection systems.
-		\\
-        Darpa Projects: \hfill www.ctf.usma.edu/currentProjects.htm
-		Poor Man’s Control Flow Integrity (PMCFI) project: Designing and running tests on an experimental kernel level security system
-		Process Gossip: Designed data collection scripts investigating the state of /proc/ for a possible side channel attack in the design of the Android keyboard process.
-	\end{asparadesc}
+\begin{asparadesc}
+\employer{Xyntek Inc.}{Remote}{Sept 2014 - Present}{Software Developer}{http://xyntekinc.com}
+Contracted to Janssen, a Johnson and Johnson company. Using Haskell and 4store to analyze material flow through
+a pharmaceutical recipie.
+\\
+\employer{athenahealth}{Boston, MA}{Summer 2014}{Software Developer Intern}{http://www.athenahealth.com}
+Member of the Security Development team. Worked on an internal cross-site scripting vulnerability detection utility.
+Specifically targeted a large perl web application. OracleSQL was used for database support and Perforce was used for
+version control.  
+\\
+\employer{Kaprica Security}{Reston, VA}{Summer 2013}{Software Developer Intern}{http://www.kapricasecurity.com}
+Worked on a python web application using Flask, SQLAlchemy backed by PostgreSQL. Worked on front-end, back-end. Also
+contacted suppliers for potential hardware obfuscation solutions.
+\\
+\employer{SecureIT}{Reston, VA}{Summer 2012}{Cyber Ninja (Research Intern)}{http://secureit.com}
+Studied, tested, and developed exploitation and exploit prevention techniques. Designed data collection systems.
+\\
+	Darpa Projects: \hfill www.ctf.usma.edu/currentProjects.htm
+	Poor Man’s Control Flow Integrity (PMCFI) project: Designing and running tests on an experimental kernel level security system
+	Process Gossip: Designed data collection scripts investigating the state of /proc/ for a possible side channel attack in the design of the Android keyboard process.
+\end{asparadesc}
 
 \section{\mysidestyle Technical Skills}
 	\begin{compactdesc}
-		\item[Languages] \begin{inparaenum} { \small
-			\item Python
-			\item C
-			\item Java
-			\item Haskell
-            \item OCaml
-            \item Perl
-            \item HTML/CSS
-			\item HAML
-		} \end{inparaenum}
-		\item[Operating Systems] \begin{inparaenum} { \small
-			\item Linux -
-			\begin{inparablank}
-				\item Debian and derivatives,
-				\item Arch,
-				\item Fedora,
-				\item webOS
-			\end{inparablank}
-			\item Windows
-		} \end{inparaenum}
-		\item[Tools] \begin{inparaenum} { \small
-			\item gdb
-			\item git
-			\item vim
-			\item Eclipse
-			\item make
-			\item troff
-			\item postgreSQL
-		} \end{inparaenum}
+	\item[Languages] \begin{inparaenum} { \small
+		\item Python
+		\item C
+		\item Java
+		\item Haskell
+		\item OCaml
+		\item Perl
+		\item HTML/CSS
+	} \end{inparaenum}
+	\item[Tools] \begin{inparaenum} { \small
+		\item gdb
+		\item git
+		\item Perforce
+		\item OracleSQL
+		\item postgreSQL
+		\item vim
+		\item Eclipse
+		\item troff
+	} \end{inparaenum}
 	\end{compactdesc}
 \section{\mysidestyle Personal Projects}
 	\begin{asparablank}
-        \item {\bf CSHLDAP}
-        \small Wrapper for LDAP specific to the instance run by the Computer Science House at RIT. Abstracts many common LDAP operations, including search and modification of records. Hosted on the Python Package Index.
-        \normalsize
-        \\
-		\item {\bf webOS Desktop Environment}
-		\small Wrote start up scripts and added features to the Window Management System, packaged it, created a lightweight Ubuntu derivative with the resulting environment. Improved desktop usability.  
-		\normalsize
-		\\
-		
-		\item {\bf DistanceUnits}
-		\small Haskell library for converting between various units of measure, part of a Haskell running log in the works. Available via hackage.
-		\normalsize
-		\\
-	\end{asparablank}
+	\item {\bf PVAL (Peer Value Assesment Ledger)}
+	\small A Perl web application for use in the Evaluations process of the Computer Science House. Interfaces with
+	       LDAP, caches results in memcache, and uses DBIX for ORM. Still in development. 
+	\normalsize \\
+	\item {\bf csh.py}
+	\small Provides a python interface for many interal Computer Science House services, including LDAP, Webnews
+               (an NNTP backed forum developed by another member). Used by multiple other projects within the
+               organization.
+	\normalsize
+	\\
+	\item {\bf webOS Desktop Environment (2012)}
+	\small Wrote start up scripts and added features to the Window Management System, packaged it, 
+	       created a lightweight Ubuntu derivative with the resulting environment. Improved desktop usability.  
+	       Unfortunately lost, because of poor understanding of version control at the time.
+	\normalsize
+	\\
 
+	\end{asparablank}
 \section{\mysidestyle Extracurricular}
-	\begin{asparablank}
-		\item {\bf Computer Science House ({\small CSH})}\rurl{http://www.csh.rit.edu/}
-		\small	\item Active Member \hfill September 2012 - Present
-				\item A student run technical organization, emphasizing technical projects and group learning. 
-		\\
-		\item {\bf Cyber Security Competition Team ({\small High School})} \hfill Fall 2011
-		\small \item Founded Senior year. Recruited a number of classmates, mentors from Lockheed Martin. Competed in the Cyber Security Awareness Week High School devision. 
-		\\
-		\item {\bf Debate Team ({\small High School})} \hfill 2009-2012
-		\small \item Founded Sophomore year. Recruited dozens of classmates, self-coached into a championship team.
-	\end{asparablank}
-
+\begin{asparablank}
+	\item {\bf Computer Science House ({\small CSH})}\rurl{http://www.csh.rit.edu/}
+	\small	\item Active Member, History Director 2014 \hfill September 2012 - Present
+	\item A student run technical organization, emphasizing technical projects and group learning. 
+	\\
+	\item {\bf Cyber Security Competition Team ({\small High School})} \hfill Fall 2011
+	\small \item Founded Senior year. Recruited a number of classmates, mentors from Lockheed Martin. Competed in the Cyber Security Awareness Week (CSAW) High School devision. 
+\end{asparablank}
 \end{resume}
 \end{document}
