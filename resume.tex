@@ -4,11 +4,11 @@
 \usepackage{anysize}
 \usepackage[pdftex, unicode]{hyperref}
 \hypersetup{
-	pdftitle={Matthew Gambogi's Resume},
-		pdfauthor={Matthew Gambogi},
-		pdfborder={0 0 0},
-		% Not sure if this is needed.
-			unicode=true
+    pdftitle={Matthew Gambogi's Resume},
+    pdfauthor={Matthew Gambogi},
+    pdfborder={0 0 0},
+    % Not sure if this is needed.
+    unicode=true
 }
 \marginsize{0.5in}{1.875in}{0.6in}{0.5in}
 \setdefaultitem{\footnotesize \textbullet}{}{}{}{}{}
@@ -17,99 +17,99 @@
 \newcommand{\rurl}[1]{\hfill {\footnotesize \url{#1}}}
 \newcommand{\rdate}[1]{\hfill {\small #1}}
 \renewcommand{\employer}[5]{\item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5} \\*}
-\begin{document}
-\name{\huge Matthew Gambogi}
-\begin{resume}
-\section{\mysidestyle Contact \\ Information} \vspace{2mm}
-\begin{asparablank}
-\item Rochester Institute of Technology \hfill 312 Pathway Pl SW
-\item 704 Park Point Dr \#1 \hfill Leesburg, Virginia 20175
-\item Rochester, NY 14623 \hfill
-\href{mailto:m@gambogi.com}{m@gambogi.com}
-\item (703) 999-3742 \hfill \href{http://matt.gambogi.com}{matt.gambogi.com}
-\item \hfill \href{http://github.com/gambogi}{github.com/gambogi}
-\end{asparablank}
+    \begin{document}
+    \name{\huge Matthew Gambogi}
+    \begin{resume}
+        \section{\mysidestyle Contact} \vspace{2mm}
+        \begin{asparablank}
+        \item
+        \item {\bf School Address}  \hfill (703) 999-3742
+        \item 704 Park Point Dr     \hfill \href{mailto:m@gambogi.com}{m@gambogi.com}
+        \item Apt. No. 1            \hfill \href{http://matt.gambogi.com}{matt.gambogi.com}
+        \item Rochester, NY 14623   \hfill \href{https://github.com/gambogi}{github.com/gambogi}
+        \\
+        \item {\bf Permanent Address}
+        \item 312 Pathway Pl SW
+        \item Leesburg, Virginia 20175
+        \end{asparablank}
 
-\section{\mysidestyle Education}
-\begin{compactdesc}
-\item[Rochester Institute of Technology] - Rochester, NY 
-\rdate{Sept 2012 - Dec 2016 (Expected)}
-\item B.S. Computer Science, minor in Economics.
-\end{compactdesc}
+        \section{\mysidestyle Education}
+        \begin{compactdesc}
+        \item[Rochester Institute of Technology] - Rochester, NY
+            \rdate{2012 - 2017 (Expected)}
+        \item B.S. Computer Science, Economics
+        \end{compactdesc}
 
-\section{\mysidestyle Work Experience}
-\begin{asparadesc}
-\employer{Xyntek Inc.}{Remote}{Sept 2014 - Present}{Software Developer}{http://xyntekinc.com}
-Contracted to Janssen, a Johnson and Johnson company. Using Haskell and 4store to analyze material flow through
-a pharmaceutical recipie.
-\\
-\employer{athenahealth}{Boston, MA}{Summer 2014}{Software Developer Intern}{http://www.athenahealth.com}
-Member of the Security Development team. Worked on an internal cross-site scripting vulnerability detection utility.
-Specifically targeted a large perl web application. OracleSQL was used for database support and Perforce was used for
-version control.  
-\\
-\employer{Kaprica Security}{Reston, VA}{Summer 2013}{Software Developer Intern}{http://www.kapricasecurity.com}
-Worked on a python web application using Flask, SQLAlchemy backed by PostgreSQL. Worked on front-end, back-end. Also
-contacted suppliers for potential hardware obfuscation solutions.
-\\
-\employer{SecureIT}{Reston, VA}{Summer 2012}{Cyber Ninja (Research Intern)}{http://secureit.com}
-Studied, tested, and developed exploitation and exploit prevention techniques. Designed data collection systems.
-\\
-	Darpa Projects: \hfill www.ctf.usma.edu/currentProjects.htm
-	Poor Man’s Control Flow Integrity (PMCFI) project: Designing and running tests on an experimental kernel level security system
-	Process Gossip: Designed data collection scripts investigating the state of /proc/ for a possible side channel attack in the design of the Android keyboard process.
-\end{asparadesc}
+        \section{\mysidestyle Work Experience}
+        \begin{asparadesc}
+            \employer{Intuit}{San Diego, CA}{January - August 2015}{Software Engineer Intern}{http://turbotax.intuit.com}
+            Established modern build system for Python projects within the TurboTax Data Science and Analytics group using maven, jenkins, git, pip, and wheels.
+            Contributed to design of targeted experimentation and personalization algorithm.
+            Created lightweight DSL in Python for describing offline and online data processing pipelines for Data Scientists.
+            Worked on realtime alerting system in Python.
+            \\
+            \employer{Janssen Pharmaceutical}{Remote}{Fall 2014, Fall 2015 - Present}{Software Engineer Intern}{http://janssen.com}
+            Used Haskell and 4store (graph database) to analyze material flow through a pharmaceutical recipie. Part-time.
+            \\
+            \employer{athenahealth}{Boston, MA}{Summer 2014}{Software Engineer Intern}{http://athenahealth.com}
+            Member of the Security Development team. Engineered automated cross-site scripting (XSS) vulnerability detection system.
+            Specifically targeted a large Perl web application. OracleSQL was used for database support and Perforce was used for
+            version control.
+            \\
+            \employer{Kaprica Security}{Reston, VA}{Summer 2013}{Software Engineer Intern}{http://kapricasecurity.com}
+            Developed Python web application using Flask, SQLAlchemy backed by PostgreSQL. Worked on frontend, backend. Also
+            contacted suppliers for potential hardware obfuscation solutions.
+            \\
+            \employer{SecureIT}{Reston, VA}{Summer 2012}{Cyber Ninja (Research Intern)}{http://secureit.com}
+            Studied, tested, and developed exploitation and exploit prevention techniques.
+            Worked on DARPA contracts.
+            Tested on an experimental (now patented) Control Flow Integrity system.
+            Investiged a potential side channel attack vector in the Android keyboard process.
+        \end{asparadesc}
 
-\section{\mysidestyle Technical Skills}
-	\begin{compactdesc}
-	\item[Languages] \begin{inparaenum} { \small
-		\item Python
-		\item C
-		\item Java
-		\item Haskell
-		\item OCaml
-		\item Perl
-		\item HTML/CSS
-	} \end{inparaenum}
-	\item[Tools] \begin{inparaenum} { \small
-		\item gdb
-		\item git
-		\item Perforce
-		\item OracleSQL
-		\item postgreSQL
-		\item vim
-		\item Eclipse
-		\item troff
-	} \end{inparaenum}
-	\end{compactdesc}
-\section{\mysidestyle Personal Projects}
-	\begin{asparablank}
-	\item {\bf PVAL (Peer Value Assesment Ledger)}
-	\small A Perl web application for use in the Evaluations process of the Computer Science House. Interfaces with
-	       LDAP, caches results in memcache, and uses DBIX for ORM. Still in development. 
-	\normalsize \\
-	\item {\bf csh.py}
-	\small Provides a python interface for many interal Computer Science House services, including LDAP, Webnews
-               (an NNTP backed forum developed by another member). Used by multiple other projects within the
-               organization.
-	\normalsize
-	\\
-	\item {\bf webOS Desktop Environment (2012)}
-	\small Wrote start up scripts and added features to the Window Management System, packaged it, 
-	       created a lightweight Ubuntu derivative with the resulting environment. Improved desktop usability.  
-	       Unfortunately lost, because of poor understanding of version control at the time.
-	\normalsize
-	\\
-
-	\end{asparablank}
-\section{\mysidestyle Extracurricular}
-\begin{asparablank}
-	\item {\bf Computer Science House ({\small CSH})}\rurl{http://www.csh.rit.edu/}
-	\small	\item Active Member, History Director 2014 \hfill September 2012 - Present
-	\item A student run technical organization, emphasizing technical projects and group learning. 
-	\\
-	\item {\bf Cyber Security Competition Team ({\small High School})} \hfill Fall 2011
-	\small \item Founded Senior year. Recruited a number of classmates, mentors from Lockheed Martin. Competed in the Cyber Security Awareness Week (CSAW) High School devision. 
-\end{asparablank}
-\end{resume}
-\end{document}
+        \section{\mysidestyle Technical Skills}
+        \begin{compactdesc}
+        \item[Languages] { \small
+                 Python,
+                 C,
+                 Java,
+                 Haskell,
+                 OCaml,
+                 Lisp,
+                 Perl,
+                 MIPS,
+                 HTML/CSS
+            }
+        \item[Tools] { \small
+                gdb,
+                git,
+                Perforce,
+                OracleSQL,
+                postgreSQL,
+                VerticaSQL,
+                vim,
+                Eclipse,
+                \LaTeX
+            }
+        \end{compactdesc}
+        \section{\mysidestyle Personal Projects}
+        \begin{asparablank}
+        \item {\bf CSH Evals}\\
+            {\small Working with a small team of peers on a Haskell web application and API for automating large portions of
+            the Computer Science House's evaluations process, member database.}
+            \\
+        \item {\bf Typed Languge Evaluator (TyLE)}\\
+            {\small
+                Toy simply typed lambda calculus interpreter in Haskell. Self-taught type theory, parser combinators.
+            }
+            \\
+        \end{asparablank}
+        \section{\mysidestyle Extracurricular}
+        \begin{asparablank}
+        \item {\bf Computer Science House ({\small CSH})}\rurl{http://csh.rit.edu/}
+        \small	\item Active Member, History Director Fall 2014 \hfill 2012 - Present
+        \item A student run technical organization, emphasizing technical projects and group learning.
+            \\
+        \end{asparablank}
+    \end{resume}
+    \end{document}
