@@ -3,14 +3,15 @@
 \usepackage{multicol}
 \usepackage{pdfpages}
 \usepackage{anysize}
+\usepackage{enumitem}
 \usepackage[pdftex, unicode]{hyperref}
 \hypersetup{
-    pdftitle={Matthew Gambogi's Resume},
-    pdfauthor={Matthew Gambogi},
+    pdftitle={Matt Gambogi's Resume},
+    pdfauthor={Matt Gambogi},
     pdfborder={0 0 0},
     unicode=true
 }
-\marginsize{0.5in}{1.875in}{0.6in}{0.5in}
+\marginsize{0.5in}{1.875in}{0.5in}{0.125in}
 \setdefaultitem{\footnotesize \textbullet}{}{}{}{}{}
 \setdefaultleftmargin{0em}{}{}{}{}{}
 \setdefaultenum{(a)}{(1)}{}{}{}{}
@@ -19,15 +20,15 @@
 \renewcommand{\employer}[6]{\item[#1] - #2 \rdate{#3} \\* #4 \rurl{#5}\\* #6}
 \newcommand{\project}[2]{\item {\bf #1}\\{\small #2}}
     \begin{document}
-    \name{\huge Matthew Gambogi}
+    \name{\huge Matt Gambogi}
     \begin{resume}
         \section{\mysidestyle Contact} \vspace{2mm}
 
         \begin{multicols}{3}
                   (703) 999-3742 \\
                   \href{mailto:m@gambogi.com}{m@gambogi.com} \\
-                  \href{matt.gambogi.com}{matt.gambogi.com} \\
-                  \href{github.com/gambogi}{github.com/gambogi}
+                  \href{https://github.com/gambogi}{github.com/gambogi}\\
+                  \href{http://gambogi.com}{gambogi.com}
 
             \columnbreak
             {\bf Permanent Address} \\
@@ -35,136 +36,142 @@
                   Leesburg, VA 20175
 
             \columnbreak
-            {\bf School Address} \\
-                   704 Park Point Dr \\
-                   Apt. No. 1 \\
-                   Rochester, NY 14623 
+            {\bf Temporary Address} \\
+                   607 Park Point Dr\\
+                   \#6\\
+                   Rochester, NY 14623
 
         \end{multicols}
-        \section{\mysidestyle Education}
+
+        \section{\mysidestyle Objective}
+            Seeking full-time Software Engineering roles.
+            Available starting in June, 2017.
+
+        \section{\mysidestyle Technical Skills}
         \begin{compactdesc}
-        \item[Rochester Institute of Technology] - Rochester, NY
-            \rdate{Spring 2017 (Expected)}
-        \item B.S. Computer Science, Economics
+        \item[Languages] { \small
+                 Python,
+                 Haskell,
+                 C,
+                 C\#,
+                 Java,
+                 Coq,
+                 SQL,
+                 Javascript,
+                 Lisp (Scheme),
+                 Perl,
+                 MIPS,
+                 HTML/CSS
+            }
+        \item[Tools] { \small
+                git,
+                vim,
+                Eclipse,
+                Jenkins,
+                Perforce,
+                Splunk,
+                \LaTeX,
+                gdb
+            }
         \end{compactdesc}
 
         \section{\mysidestyle Work Experience}
         \begin{asparadesc}
             \employer{Microsoft}
                      {Redmond, WA}
-                     {Starting June 2016}
-                     {Software Engineer Intern}
+                     {Summer 2016}
+                     {Software Engineer Intern, Intune}
                      {microsoft.com}
                      {
-                         Upcoming internship on the Intune team.
+                         Migrated portions of offline analytics framework to coordinate complex event
+                         tracking across services. Enabled realtime utilization of analytic insights.
                      }\\
-            \employer{Intuit}
+            \employer{Intuit (TurboTax)}
                      {San Diego, CA}
                      {January - August 2015}
-                     {Software Engineer Intern}
+                     {Software Engineer Intern, Data Science Group}
                      {turbotax.intuit.com}
-                     {
-                     As a member of the TurboTax Data Science team:
-                       Contributed to design of novel machine learning algorithm.
-                       Created framework for data science model specification
-                       now used by data scientists throughout the company.
-                       Developed and deployed coninuous integration solution for
-                       internal Python projects.
-                       Recieved ``Win Together'' award for accomplishments.
-                     }\\
-            \employer{Janssen Pharmaceutical}
+                     { \vspace{-5mm}
+                       \begin{itemize}[noitemsep] %, topsep=1pt]
+                        \item Contributed to design of novel multi-armed bandit machine learning algorithm.
+                        \item Created framework for data science model specification used by data scientists throughout the company.
+                        \item Developed and deployed continuous integration (CI) infrastructure for building, testing, packaging, and deploying internal Python projects.
+                        \item Received ``Win Together'' award.
+                       \end{itemize}
+                       \vspace{4mm}
+                     }
+            \employer{Johnson and Johnson}
                      {Remote}
-                     {Fall 2014, Fall 2015 - Present}
-                     {Software Engineer Intern}
+                     {Fall 2014, Fall 2015}
+                     {Software Engineer Intern, Janssen Pharmaceutical}
                      {janssen.com}
-                     {Used Haskell and 4store (graph database) to analyze material 
-                      flow through a pharmaceutical recipie. Part-time.}\\
+                     {
+                         Haskell and graph database framework for pharmaceutical production analysis.
+                        Now used by Tylenol and other major teams.
+                     }\\
             \employer{athenahealth}
                      {Boston, MA}
                      {Summer 2014}
-                     {Software Engineer Intern}
+                     {Software Engineer Intern, Security Dev Team}
                      {athenahealth.com}
-                     {Member of the Security Development team.
-                      Engineered automated cross-site scripting
-                      (XSS) vulnerability detection system.
-                      Specifically targeted a large Perl web application. 
+                     {
+                         Engineered automated stored cross-site scripting (XSS) vulnerability detection system.
+                        Removed two classes of XSS vulnerabilities from entire codebase.
                      }\\
             \employer{Kaprica Security}
                      {Reston, VA}
                      {Summer 2013}
                      {Software Engineer Intern}
                      {kapricasecurity.com}
-                     {Developed Python web application using Flask,
-                      SQLAlchemy backed by PostgreSQL.
-                      Worked on frontend, backend. Also contacted suppliers
-                      for potential hardware obfuscation solutions.
+                     {
+                         Full-stack Python web development.
                      }\\
             \employer{SecureIT}
                      {Reston, VA}
                      {Summer 2012}
                      {Cyber Ninja (Research Intern)}
                      {secureit.com}
-                     {Studied, tested, and developed exploitation and
-                      exploit prevention techniques.
-                      Worked on DARPA contracts. 
-                      Tested on an experimental (now patented)
-                      Control Flow Integrity system.
-                      Investiged a potential side channel attack vector
-                      in the Android keyboard process.
+                     {
+                      Studied, tested, and developed exploitation and security techniques.
+                      Tested an experimental (now patented)
+                      Control Flow Integrity system, and 
+                      investigated a potential side channel attack vector
+                      in the Android keyboard process, both DARPA projects.
                      }
         \end{asparadesc}
 
-        \section{\mysidestyle Technical Skills}
+        \section{\mysidestyle Education}
         \begin{compactdesc}
-        \item[Languages] { \small
-                 Python,
-                 C,
-                 Haskell,
-                 OCaml,
-                 Lisp,
-                 Perl,
-                 Java,
-                 MIPS,
-                 HTML/CSS
-            }
-        \item[Tools] { \small
-                Eclipse,
-                gdb,
-                git,
-                \LaTeX,
-                OracleSQL,
-                Perforce,
-                postgreSQL,
-                Splunk,
-                VerticaSQL,
-                vim
-            }
+        \item[Rochester Institute of Technology] - Rochester, NY
+            \rdate{Spring 2017}
+        \item B.S., Computer Science | Minor in Economics
         \end{compactdesc}
+
+        \section{\mysidestyle Research}
+        \begin{compactdesc}
+        \item Nunes-Harwitt A., Gambogi M., Whitaker T. (2017) FUNCTIONAL PEARLS An Investigation of Quick-Sort.
+              \textit{Journal of Functional Programming}, Under Consideration.
+        \end{compactdesc}
+
+        \section{\mysidestyle Extracurricular}
+        \begin{asparadesc}
+            \employer{Computer Science House}
+                     {RIT}
+                     {2012 - Present}
+                     {Former Alumni Relations Director (2014); Constitution Maintainer}
+                     {csh.rit.edu/}
+                     {}
+        \end{asparadesc}
+
         \section{\mysidestyle Personal Projects}
         \begin{asparablank}
             \project{CSH Evals}
             {
-                Working with a small team of peers on a Haskell web application
-                and API for automating large portions of the Computer Science
-                House's evaluations process, member database.
+                Led a team of five peers on a Haskell web application
+                and API for managing the evaluation process and member database
+                of the Computer Science House.
             }\\
-            \project{Typed Language Evaluator (TyLE)}
-            {
-                Toy simply typed lambda calculus interpreter in Haskell.
-                Self-taught type theory, parser combinators.
-            }
         \end{asparablank}
-        \section{\mysidestyle Extracurricular}
-        \begin{asparadesc}
-            \employer{Computer Science House ({\small CSH})}
-                     {}
-                     {2012 - Present}
-                     {Active Member}
-                     {csh.rit.edu/}
-                     {A 40 year old selective student technical organization,
-                      emphasizing technical projects and group learning.
-                      Elected History Director (Alumni Relations) 2014.
-                     }
-        \end{asparadesc}
+
     \end{resume}
     \end{document}
